@@ -18,7 +18,7 @@ $"{BookObjectModel.DateCreated}"
 
 var mapper = MapperConfig.InitializeAutoMapper();
 var bookDTO1 = mapper.Map<BookInputModel>(BookObjectModel);
-var bookDTO2 = mapper.Map<BookViewModel>(BookObjectModel);
+var bookDTO2 = mapper.Map<BookViewModel>(bookDTO1);
 
 Console.WriteLine(
 $" Input model result = "  + 
